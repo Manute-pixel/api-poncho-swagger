@@ -5,15 +5,15 @@ info:
 
 collections:
   - name: "artesanos"
-    path: "C:/Users/Manu/Desktop/proyectos/Clases_back_end/api-poncho-swagger/artesanos"
+    path: "./collections/artesanos"
   - name: "postulaciones"
-    path: "C:/Users/Manu/Desktop/proyectos/Clases_back_end/api-poncho-swagger/postulaciones"
+    path: "./collections/postulaciones"
   - name: "productos"
-    path: "C:/Users/Manu/Desktop/proyectos/Clases_back_end/api-poncho-swagger/productos"
+    path: "./collections/productos"
   - name: "stands"
-    path: "C:/Users/Manu/Desktop/proyectos/Clases_back_end/api-poncho-swagger/stands"
+    path: "./collections/stands"
   - name: "usuarios"
-    path: "C:/Users/Manu/Desktop/proyectos/Clases_back_end/api-poncho-swagger/usuarios"
+    path: "./collections/usuarios"
 
 specs:
 
