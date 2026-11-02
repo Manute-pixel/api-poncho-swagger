@@ -1,0 +1,17 @@
+opencollection: 1.0.0
+
+info:
+  name: usuarios
+
+request:
+  variables:
+    - name: json_web_token_09fr
+      value: ""
+    - name: json_web_token_0dmm
+      value: ""
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git

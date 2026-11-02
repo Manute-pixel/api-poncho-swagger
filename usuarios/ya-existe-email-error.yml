@@ -1,0 +1,34 @@
+info:
+  name: ya-existe-email-error
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/usuarios/registro
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: "{\r
+
+      \  \"nombre\": \"Jose\",\r
+
+      \  \"apellido\": \"Gomez\",\r
+
+      \  \"email\": \"jose.gomez@gmail.com\",\r
+
+      \  \"password\": \"pass1234\",\r
+
+      \  \"rol_usuario\": \"artesano\"\r
+
+      }"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

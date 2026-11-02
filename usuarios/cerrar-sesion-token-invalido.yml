@@ -1,0 +1,18 @@
+info:
+  name: cerrar-sesion-token-invalido
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:3000/usuarios/logout
+  auth:
+    type: bearer
+    token: dsfgdsg
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
