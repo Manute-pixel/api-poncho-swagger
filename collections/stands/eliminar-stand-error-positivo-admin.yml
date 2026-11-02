@@ -1,0 +1,18 @@
+info:
+  name: eliminar-stand-error-positivo-admin
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/stands/99"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiJkMTY4YTM1Mi01NTQ4LTRhNzEtYmI3Ny0wODliOGZjYjA2NzAiLCJpYXQiOjE3OTM4MDIwNTgsImV4cCI6MTc5MzgwMjk1OH0.4AHq4hl8G_qjcmtyYvcHHc7jIi92stFa3Xg3LtFaIC8
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

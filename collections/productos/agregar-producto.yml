@@ -1,0 +1,26 @@
+info:
+  name: agregar-producto
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://localhost:3000/productos/
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "jjj",
+        "descripcion": "producto",
+        "precio": 300,
+        "categoriaId": 1,
+        "artesanoId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

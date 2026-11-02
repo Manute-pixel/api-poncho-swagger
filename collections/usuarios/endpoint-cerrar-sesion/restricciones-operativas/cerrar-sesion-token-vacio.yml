@@ -1,14 +1,14 @@
 info:
-  name: cerrar-sesion
+  name: cerrar-sesion-token-vacio
   type: http
-  seq: 8
+  seq: 2
 
 http:
   method: POST
-  url: http://localhost:3000/usuarios/logout
+  url: "{{baseUrl}}/usuarios/logout"
   auth:
     type: bearer
-    token: "{{json_web_token_09fr}}"
+    token: ""
 
 settings:
   encodeUrl: true
