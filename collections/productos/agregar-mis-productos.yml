@@ -1,0 +1,26 @@
+info:
+  name: agregar-mis-productos
+  type: http
+  seq: 9
+
+http:
+  method: POST
+  url: http://localhost:3000/productos/crear-mi-producto
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "jjj",
+        "descripcion": "producto",
+        "precio": 300,
+        "categoriaId": 3,
+        "artesanoId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
