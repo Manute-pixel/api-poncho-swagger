@@ -1,0 +1,18 @@
+info:
+  name: mi-perfil
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{baseUrl}}/usuarios/me"
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlN2NkYWYwYS02MWQ1LTRjZTAtYTljMC02OTQwNzlkNWU4ZDciLCJqdGkiOiJkYTYyYWI5Zi0yMDk4LTQzYmItODI0My1iY2IwYTBhMjhhZDEiLCJpYXQiOjE3OTM3OTg1ODksImV4cCI6MTc5Mzc5OTQ4OX0.of_UwG42FMpBW7irqfqXMUTDwcRVC2u3YPekftB_OOI
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

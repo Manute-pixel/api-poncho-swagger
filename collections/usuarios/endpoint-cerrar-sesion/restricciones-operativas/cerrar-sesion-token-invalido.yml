@@ -1,14 +1,14 @@
 info:
-  name: mi-perfil
+  name: cerrar-sesion-token-invalido
   type: http
-  seq: 6
+  seq: 1
 
 http:
-  method: GET
-  url: http://localhost:3000/usuarios/me
+  method: POST
+  url: "{{baseUrl}}/usuarios/logout"
   auth:
     type: bearer
-    token: ""
+    token: dsfgdsg
 
 settings:
   encodeUrl: true
