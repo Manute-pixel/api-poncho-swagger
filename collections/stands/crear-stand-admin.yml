@@ -5,20 +5,18 @@ info:
 
 http:
   method: POST
-  url: http://localhost:3000/stands
+  url: "{{baseUrl}}/stands"
   body:
     type: json
     data: |-
       {
         "numero": "30",
         "estado": "DISPONIBLE",
-        "sectorId": "2",
-        "artesanoId": ""
-        
+        "sectorId": 1
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTk2ZDI5My0wOWI5LTRiYmEtOTliOS1iNTRhYWMxZTg4NDkiLCJqdGkiOiIwNzE1ODY2NC1kNjBkLTRjN2ItOWE4YS1kNWI3ZmYyOTBkYjIiLCJpYXQiOjE3OTM3MzkzMjYsImV4cCI6MTc5Mzc0MDIyNn0.IPBTDWbqktnONzLfmvtqUtzYDVv2bBUoo9nmGQerW_k
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiJiYmVhZjU3Mi0xODkyLTRlMDAtYTQ1Ni0zZDk1OTMzZmI1N2EiLCJpYXQiOjE3OTM4MDUxOTUsImV4cCI6MTc5MzgwNjA5NX0.Xa71-JTD9fX91S_Hj6FYcxEa7YGa9sCDWtQVUsBUNmI
 
 settings:
   encodeUrl: true

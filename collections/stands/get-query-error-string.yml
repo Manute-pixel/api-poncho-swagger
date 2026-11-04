@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/stands?pagina=da
+  url: "{{baseUrl}}/stands?pagina=da"
   params:
     - name: pagina
       value: da
