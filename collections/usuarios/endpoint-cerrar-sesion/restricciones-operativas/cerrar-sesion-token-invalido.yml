@@ -1,11 +1,11 @@
 info:
   name: cerrar-sesion-token-invalido
   type: http
-  seq: 9
+  seq: 1
 
 http:
   method: POST
-  url: http://localhost:3000/usuarios/logout
+  url: "{{baseUrl}}/usuarios/logout"
   auth:
     type: bearer
     token: dsfgdsg

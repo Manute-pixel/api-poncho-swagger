@@ -1,23 +1,21 @@
 info:
-  name: iniciar-sesion
+  name: iniciar-sesion-admin
   type: http
-  seq: 4
+  seq: 2
 
 http:
   method: POST
-  url: http://localhost:3000/usuarios/login
+  url: "{{baseUrl}}/usuarios/login"
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: "{\r
-
-      \  \"email\": \"jose.gomez@gmail.com\",\r
-
-      \  \"password\": \"pass1234\"\r
-
-      }"
+    data: |-
+      {
+        "email": "{{emailAdmin}}",
+        "password": "{{claveAdmin}}"
+      }
   auth: inherit
 
 settings:

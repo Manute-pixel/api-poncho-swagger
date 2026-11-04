@@ -1,0 +1,34 @@
+info:
+  name: nombre-vacio
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/usuarios/registro-artesano"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "",
+        "apellido": "prueba",
+        "email": "artesano@gmail.com",
+        "password": "clavesegura",
+        "dni": "40657278",
+        "fechaNac": "2000-05-15",
+        "telefono": "3834123456",
+        "rubroId": 3,
+        "localidadId": 4,
+        "provinciaId": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
