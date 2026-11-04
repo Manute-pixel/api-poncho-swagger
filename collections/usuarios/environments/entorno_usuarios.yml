@@ -1,0 +1,20 @@
+name: entorno_usuarios
+variables:
+  - name: emailAdmin
+    value: paulo@email.com
+    description: email del usuario admin del sistema Paulo
+  - name: emailArtesanoPedro
+    value: pedro@gmail.com
+    description: email del usuario artesano Pedro
+  - name: emailArtesanoNuevo
+    value: example@gmail.com
+    description: email para crear un usuario artesano nuevo, debe ser cambiado una vez utilizado
+  - secret: true
+    name: claveAdmin
+    description: clave del usuario administrador del sistema (Paulo Juarez)
+  - secret: true
+    name: claveArtesanoPedro
+    description: clave del usuario Artesano Pedro Gonzales
+  - secret: true
+    name: claveArtesanoNuevo
+    description: clave para probar la creacion de un nuevo usuario artesano, debe cambiarse luego de ser utilizada una vez
