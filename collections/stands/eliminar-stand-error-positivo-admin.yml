@@ -5,10 +5,10 @@ info:
 
 http:
   method: DELETE
-  url: http://localhost:3000/stands/99
+  url: "{{baseUrl}}/stands/99"
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTk2ZDI5My0wOWI5LTRiYmEtOTliOS1iNTRhYWMxZTg4NDkiLCJqdGkiOiIwNzE1ODY2NC1kNjBkLTRjN2ItOWE4YS1kNWI3ZmYyOTBkYjIiLCJpYXQiOjE3OTM3MzkzMjYsImV4cCI6MTc5Mzc0MDIyNn0.IPBTDWbqktnONzLfmvtqUtzYDVv2bBUoo9nmGQerW_k
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiJkMTY4YTM1Mi01NTQ4LTRhNzEtYmI3Ny0wODliOGZjYjA2NzAiLCJpYXQiOjE3OTM4MDIwNTgsImV4cCI6MTc5MzgwMjk1OH0.4AHq4hl8G_qjcmtyYvcHHc7jIi92stFa3Xg3LtFaIC8
 
 settings:
   encodeUrl: true
