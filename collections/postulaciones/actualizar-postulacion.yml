@@ -1,0 +1,26 @@
+info:
+  name: actualizar-postulacion
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: http://localhost:3000/postulaciones/1
+  body:
+    type: json
+    data: |-
+      {
+        "fecha_postulacion": "1990-10-22",
+        "estado_postulacion": "DISPONIBLE",
+        "artesanoId": "3",
+        "edicionId": "3"
+        
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
