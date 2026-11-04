@@ -1,0 +1,28 @@
+info:
+  name: crear-stand-admin
+  type: http
+  seq: 7
+
+http:
+  method: POST
+  url: http://localhost:3000/stands
+  body:
+    type: json
+    data: |-
+      {
+        "numero": "30",
+        "estado": "DISPONIBLE",
+        "sectorId": "2",
+        "artesanoId": ""
+        
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTk2ZDI5My0wOWI5LTRiYmEtOTliOS1iNTRhYWMxZTg4NDkiLCJqdGkiOiIwNzE1ODY2NC1kNjBkLTRjN2ItOWE4YS1kNWI3ZmYyOTBkYjIiLCJpYXQiOjE3OTM3MzkzMjYsImV4cCI6MTc5Mzc0MDIyNn0.IPBTDWbqktnONzLfmvtqUtzYDVv2bBUoo9nmGQerW_k
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
