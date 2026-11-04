@@ -1,0 +1,31 @@
+info:
+  name: localidad-no-encontrado
+  type: http
+  seq: 11
+
+http:
+  method: POST
+  url: "{{baseUrl}}/usuarios/registro-artesano"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Pedro",
+        "apellido": "Gonzales",
+        "email": "{{emailArtesanoNuevo}}",
+        "password": "{{claveArtesanoNuevo}}",
+        "dni": "40123459",
+        "fechaNac": "2000-05-15",
+        "telefono": "3834123456",
+        "rubroId": 3,
+        "localidadId": 999,
+        "provinciaId": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
