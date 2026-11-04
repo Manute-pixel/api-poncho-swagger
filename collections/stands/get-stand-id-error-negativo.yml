@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/stand/-9
+  url: "{{baseUrl}}/stands/-9"
   auth: inherit
 
 settings:
