@@ -1,11 +1,15 @@
 info:
-  name: New Request
+  name: get-query-error-string
   type: http
-  seq: 2
+  seq: 5
 
 http:
   method: GET
-  url: http://
+  url: http://localhost:3000/postulaciones?pagina=da
+  params:
+    - name: pagina
+      value: da
+      type: query
   auth: inherit
 
 settings:

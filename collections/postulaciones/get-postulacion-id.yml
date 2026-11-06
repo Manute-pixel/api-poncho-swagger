@@ -1,0 +1,18 @@
+info:
+  name: get-postulacion-id
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:3000/postulaciones/1
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiIxYzM2NGRhMy0wNDcyLTQxMGUtYmJkZS1iYjEyMTBhYTZhYTQiLCJpYXQiOjE3OTQwNjQyMjcsImV4cCI6MTc5NDA2NTEyN30.zhfFF84nXAup1SZ7ZGPN6WCjrB50CRHf5xgxYfiyT5E
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

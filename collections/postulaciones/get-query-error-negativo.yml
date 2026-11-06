@@ -1,11 +1,15 @@
 info:
-  name: New Request_3
+  name: get-query-error-negativo
   type: http
-  seq: 5
+  seq: 9
 
 http:
   method: GET
-  url: http://
+  url: http://localhost:3000/postulaciones?pagina=-2
+  params:
+    - name: pagina
+      value: "-2"
+      type: query
   auth: inherit
 
 settings:
