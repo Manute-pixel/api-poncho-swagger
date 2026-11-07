@@ -6,7 +6,9 @@ info:
 http:
   method: GET
   url: http://localhost:3000/postulaciones
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiIxYzM2NGRhMy0wNDcyLTQxMGUtYmJkZS1iYjEyMTBhYTZhYTQiLCJpYXQiOjE3OTQwNjQyMjcsImV4cCI6MTc5NDA2NTEyN30.zhfFF84nXAup1SZ7ZGPN6WCjrB50CRHf5xgxYfiyT5E
 
 settings:
   encodeUrl: true

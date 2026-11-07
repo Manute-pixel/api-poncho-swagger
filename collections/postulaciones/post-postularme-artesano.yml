@@ -1,0 +1,24 @@
+info:
+  name: post-postularme-artesano
+  type: http
+  seq: 10
+
+http:
+  method: POST
+  url: "{{baseUrl}}/postulaciones/postularme"
+  body:
+    type: json
+    data: |-
+      {
+        "edicionId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlN2NkYWYwYS02MWQ1LTRjZTAtYTljMC02OTQwNzlkNWU4ZDciLCJqdGkiOiIxMGJmMTY4OC0yMDg3LTQ1ZmItYTc4OS1mNWYxOWQxM2JmOTkiLCJpYXQiOjE3OTQwNzc1NjAsImV4cCI6MTc5NDA3ODQ2MH0.OvfH2ltVObOhz7iYwCPsDxd1XOhPH_SYsS9mtnZJpR0
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
