@@ -1,22 +1,20 @@
 info:
   name: post-postularme-artesano
   type: http
-  seq: 9
+  seq: 10
 
 http:
   method: POST
-  url: http://localhost:3000/postularme
+  url: "{{baseUrl}}/postulaciones/postularme"
   body:
     type: json
     data: |-
       {
-        "fecha_postulacion": "1991-10-21",
-        "estado_postulacion": "DISPONIBLE",
-        "artesanoId": "2",
-        "edicionId": "2"
-        
+        "edicionId": 1
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlN2NkYWYwYS02MWQ1LTRjZTAtYTljMC02OTQwNzlkNWU4ZDciLCJqdGkiOiIxMGJmMTY4OC0yMDg3LTQ1ZmItYTc4OS1mNWYxOWQxM2JmOTkiLCJpYXQiOjE3OTQwNzc1NjAsImV4cCI6MTc5NDA3ODQ2MH0.OvfH2ltVObOhz7iYwCPsDxd1XOhPH_SYsS9mtnZJpR0
 
 settings:
   encodeUrl: true
