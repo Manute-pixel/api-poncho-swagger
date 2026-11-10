@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{baseUrl}}/reportes/artesano"
+  url: "{{baseUrl}}/reportes/artesano-localidad"
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNjQ2YTUxNi1lOTUxLTQ3OGQtYmM5OS1jM2MxNTljMzUyODEiLCJqdGkiOiJhNzM5ZGU5OC1lYjZlLTRkNDItOWIxYy1kOWI0ODRmYTQ3NTEiLCJpYXQiOjE3OTQzMjE4MDgsImV4cCI6MTc5NDMyMjcwOH0.QjfddM1AXeckMIUJHFcA5b8wR0UgsX553SV_N8jA9mA
