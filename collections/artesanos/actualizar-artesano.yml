@@ -1,38 +1,30 @@
 info:
   name: actualizar-artesano
   type: http
-  seq: 6
+  seq: 5
 
 http:
-  method: PUT
-  url: http://localhost:3000/artesanos/1
+  method: PATCH
+  url: http://localhost:3000/artesanos/3
   headers:
     - name: Content-Type
       value: application/json
   body:
     type: json
-    data: "{\r
-
-      \  \"nombre\": \"Juan Jose\",\r
-
-      \  \"apellido\": \"Pérez Gómez\",\r
-
-      \  \"dni\": \"35123456\",\r
-
-      \  \"email\": \"juan.perez@example.com\",\r
-
-      \  \"fechaNac\": \"2000-05-15\",\r
-
-      \  \"telefono\": \"3834123456\",\r
-
-      \  \"rubroId\": 1,\r
-
-      \  \"localidadId\": 1,\r
-
-      \  \"provinciaId\": 1\r
-
-      }"
-  auth: inherit
+    data: |-
+      {
+        "nombre": "pedro",
+        "apellido": "vazques",
+        "dni": "35123456",
+        "fechaNac": "2000-05-15",
+        "telefono": "3834123456",
+        "rubroId": 1,
+        "localidadId": 1,
+        "provinciaId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTU2YWU1Yi0wMzgwLTRjOGItODIxYS05NzRhYjhlOTAyNDUiLCJqdGkiOiI4MjgzYmE4ZS1hNDZmLTQ0YTgtYTkyNi0wNjQ1OTM1NzJjODUiLCJpYXQiOjE3OTQzNTAzOTEsImV4cCI6MTc5NDM1MTI5MX0.ipkO46V0Ts4zfhybAte3Io2u2eQMFhvIDA3DXWVO5vM
 
 settings:
   encodeUrl: true
