@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/postulaciones/mi-postulacion
+  url: "{{baseUrl}}/postulaciones/mi-postulacion"
   auth:
     type: bearer
     token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlN2NkYWYwYS02MWQ1LTRjZTAtYTljMC02OTQwNzlkNWU4ZDciLCJqdGkiOiI4MzJjNDQ5Zi0wNjg4LTQ4ODQtOWY5Ny0zZTkxZDQyMTRkNzMiLCJpYXQiOjE3OTQwNzY3MTksImV4cCI6MTc5NDA3NzYxOX0.ZIOOSatNR4ZJ9NCIQJO4tmPT6tyEXw3fXF7Q35ItQ20

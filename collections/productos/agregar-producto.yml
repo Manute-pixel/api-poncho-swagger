@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:3000/productos/
+  url: "{{baseUrl}}/productos/"
   body:
     type: json
     data: |-
@@ -16,7 +16,9 @@ http:
         "categoriaId": 1,
         "artesanoId": 1
       }
-  auth: inherit
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwOGM1NWRiNi1lZTkzLTQ1NjAtOGQ5NS1lNzJjMDdjMzVkOWQiLCJqdGkiOiIwM2ZmZDVjMy05MTNiLTQzNjAtYTM0OS03YWIxYjNhMWYzNGEiLCJpYXQiOjE3OTQzMzA0NzAsImV4cCI6MTc5NDMzMTM3MH0.LgCCaiZql3d9EQhaovYQTukWtjITEb3LZGdW00j6wSk
 
 settings:
   encodeUrl: true
