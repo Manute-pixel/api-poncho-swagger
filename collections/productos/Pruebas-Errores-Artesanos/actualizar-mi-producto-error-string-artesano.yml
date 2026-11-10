@@ -1,0 +1,26 @@
+info:
+  name: actualizar-mi-producto-error-string-artesano
+  type: http
+  seq: 7
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/productos/actualizar-mi-producto/de"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "jjj",
+        "descripcion": "producto",
+        "precio": 3000,
+        "categoriaId": 1,
+        "artesanoId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
