@@ -14,6 +14,8 @@ collections:
     path: "./collections/stands"
   - name: "usuarios"
     path: "./collections/usuarios"
+  - name: "reporte"
+    path: "collections/reporte"
 
 specs:
 
