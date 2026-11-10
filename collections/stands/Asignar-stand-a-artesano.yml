@@ -1,0 +1,24 @@
+info:
+  name: Asignar-stand-a-artesano
+  type: http
+  seq: 12
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/stands/asignar-stand-artesano/34"
+  body:
+    type: json
+    data: |-
+      {
+        "artesanoId": 2
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiJmNTBmMGMxNy0wN2U5LTQ3OTEtYmFjMy01MGFkNzliNjVhZGIiLCJpYXQiOjE3OTQxNjU4NjEsImV4cCI6MTc5NDE2Njc2MX0.fzA85Ii_klULnMlE5HQWO5Q9r5ov8r9IzR-1ply313I
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
