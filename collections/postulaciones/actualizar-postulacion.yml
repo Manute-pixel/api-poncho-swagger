@@ -1,22 +1,20 @@
 info:
   name: actualizar-postulacion
   type: http
-  seq: 7
+  seq: 8
 
 http:
-  method: PUT
-  url: http://localhost:3000/postulaciones/4
+  method: PATCH
+  url: "{{baseUrl}}/postulaciones/5"
   body:
     type: json
     data: |-
       {
-        "estado": "corregir",
-        "artesanoId": 2,
-        "edicionId": 1
+        "estado": "aceptado"
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiJjOGRiZGRjMC0yYjI5LTRmZWMtYjI1ZS02MTI4MWI1MWQ3ZTIiLCJpYXQiOjE3OTQwNzMyNTIsImV4cCI6MTc5NDA3NDE1Mn0.-sgz8dNhY5hw1PL-tFcThvF8p8E0aAI8FDhaMp7Miz4
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNjQ2YTUxNi1lOTUxLTQ3OGQtYmM5OS1jM2MxNTljMzUyODEiLCJqdGkiOiI1OWVjYmZlOC05M2RlLTQ1ZWYtYjg5ZS0wYTM3YjkzNjVmY2YiLCJpYXQiOjE3OTQzNTE0ODgsImV4cCI6MTc5NDM1MjM4OH0._Pi9WpAkM-bCKiiYlv2gyxviDTNJospMuuR_vDTL7sM
 
 settings:
   encodeUrl: true
