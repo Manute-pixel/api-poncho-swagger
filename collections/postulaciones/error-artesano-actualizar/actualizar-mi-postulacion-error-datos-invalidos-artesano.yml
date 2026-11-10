@@ -1,0 +1,25 @@
+info:
+  name: "actualizar-mi-postulacion-error-datos-invalidos-artesano "
+  type: http
+  seq: 16
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/postulaciones/actualizar-mi-postulacion"
+  body:
+    type: json
+    data: |-
+      {
+        "estado": "aceptado",
+        "edicionId": 2
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwOGM1NWRiNi1lZTkzLTQ1NjAtOGQ5NS1lNzJjMDdjMzVkOWQiLCJqdGkiOiJmZTRjNDkzYS0wOGFkLTQyNjUtYjhlYy02ZTI2MDM0NTA1YWEiLCJpYXQiOjE3OTQzNTE1NzIsImV4cCI6MTc5NDM1MjQ3Mn0.OJsPxX0d703N62vEbX5vmwKlUcNmgDrP-OrydPZjYfc
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
