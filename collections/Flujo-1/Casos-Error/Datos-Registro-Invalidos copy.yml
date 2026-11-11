@@ -1,0 +1,26 @@
+info:
+  name: Datos-Registro-Invalidos copy
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:3000/usuarios/registro
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Guadalupe",
+        "apellido": "Toloza",
+        "email": "emailnovalido",
+        "password": "passs1234",
+        "rol_usuario": "artesano"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

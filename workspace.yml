@@ -14,9 +14,15 @@ collections:
     path: "./collections/stands"
   - name: "usuarios"
     path: "./collections/usuarios"
+  - name: "Flujo-1"
+    path: "collections/Flujo-1"
+  - name: "Flujo-2-Gestion-Productos"
+    path: "collections/Flujo-2-Gestion-Productos"
   - name: "reporte"
     path: "collections/reporte"
+  - name: "Untitled Collection"
+    path: "collections/Untitled Collection"
 
 specs:
 
-docs: ''
+docs: ""

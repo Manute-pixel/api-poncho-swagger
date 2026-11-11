@@ -1,0 +1,24 @@
+info:
+  name: Asignar-un-stand-que-ya-está-ocupado
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/stands/asignar-stand-artesano/6"
+  body:
+    type: json
+    data: |-
+      {
+        "artesanoId": 3
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTU2YWU1Yi0wMzgwLTRjOGItODIxYS05NzRhYjhlOTAyNDUiLCJqdGkiOiI3ZWI5NDExZi02ZjQ3LTQ5OWYtOWJkYy0xNTYzNTIwNzhlYjQiLCJpYXQiOjE3OTQ0MzQ4MTcsImV4cCI6MTc5NDQzNTcxN30.VRPO503uvW15I2VC4YpTWEWxAAx06Di_hux_8yLjDvA
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

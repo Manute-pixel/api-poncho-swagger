@@ -1,0 +1,24 @@
+info:
+  name: Asignar-un-stand-inexistente
+  type: http
+  seq: 7
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/stands/asignar-stand-artesano/999"
+  body:
+    type: json
+    data: |-
+      {
+        "artesanoId": 3
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTU2YWU1Yi0wMzgwLTRjOGItODIxYS05NzRhYjhlOTAyNDUiLCJqdGkiOiI5OWIxYjc0YS0zNzJmLTRjNmQtYWU1Yi04ZmQxOGI2YWE2NTAiLCJpYXQiOjE3OTQ0MzI1ODEsImV4cCI6MTc5NDQzMzQ4MX0.1xSoDY4bbLwXgwrf2H5hYYGH8Z7prT4Myv4L3JiyF9s
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

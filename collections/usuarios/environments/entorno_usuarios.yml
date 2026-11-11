@@ -4,7 +4,7 @@ variables:
     value: paulo@email.com
     description: email del usuario admin del sistema Paulo
   - name: emailArtesanoPedro
-    value: pedro@gmail.com
+    value: pedro2@gmail.com
     description: email del usuario artesano Pedro
   - name: emailArtesanoNuevo
     value: example@gmail.com

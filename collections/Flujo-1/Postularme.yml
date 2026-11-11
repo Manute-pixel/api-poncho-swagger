@@ -1,0 +1,22 @@
+info:
+  name: Postularme
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:3000/postulaciones/postularme
+  body:
+    type: json
+    data: |-
+      {
+        "edicionId": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

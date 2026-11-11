@@ -1,0 +1,22 @@
+info:
+  name: Actualizar-Postulacion-Sin-Permisos
+  type: http
+  seq: 12
+
+http:
+  method: PATCH
+  url: http://localhost:3000/postulaciones/1
+  body:
+    type: json
+    data: |-
+      {
+        "estado": "aceptado"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

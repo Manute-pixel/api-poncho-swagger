@@ -1,0 +1,25 @@
+info:
+  name: crear-stand-solo-admin
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{baseUrl}}/stands"
+  body:
+    type: json
+    data: |-
+      {
+        "numero": "37",
+        "sectorId": 3
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTU2YWU1Yi0wMzgwLTRjOGItODIxYS05NzRhYjhlOTAyNDUiLCJqdGkiOiI4ZTI5NGE4YS0xYjBjLTRiZjUtOGE0MC02ODUyNzQ1MWY3ZTkiLCJpYXQiOjE3OTQ0MzIxODcsImV4cCI6MTc5NDQzMzA4N30.KHOQi-TxjrELJN8D2jDxSH74NTUCs1QrRVASTf6SzNQ
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
