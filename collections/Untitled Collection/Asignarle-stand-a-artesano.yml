@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: "{{baseUrl}}/stands/asignar-stand-artesano/2"
+  url: "{{baseUrl}}/stands/asignar-stand-artesano/8"
   body:
     type: json
     data: |-
@@ -14,7 +14,7 @@ http:
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTU2YWU1Yi0wMzgwLTRjOGItODIxYS05NzRhYjhlOTAyNDUiLCJqdGkiOiI3ODllZjg2YS1hMDc0LTQ5NTUtODRjZC1iNjFlMTA4ZTkzNGMiLCJpYXQiOjE3OTQ0MjU5NzMsImV4cCI6MTc5NDQyNjg3M30.-KrAhOpID4xLgsR0myvF1iqxDv3DAAD6l1A4a3-gBK4
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTU2YWU1Yi0wMzgwLTRjOGItODIxYS05NzRhYjhlOTAyNDUiLCJqdGkiOiJmNTY2OTkzYS0yNWExLTRhNGItODVlZi01MzMzYjNmYTI3M2IiLCJpYXQiOjE3OTQ0MzIzMTMsImV4cCI6MTc5NDQzMzIxM30.10r69_q02FsLVeQnJHXI2Huk4QcAx74dM3fhMG4MZVc
 
 settings:
   encodeUrl: true
