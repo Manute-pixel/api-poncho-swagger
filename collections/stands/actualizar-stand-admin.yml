@@ -5,19 +5,17 @@ info:
 
 http:
   method: PUT
-  url: "{{baseUrl}}/stands/1"
+  url: "{{baseUrl}}/stands/34"
   body:
     type: json
     data: |-
       {
-        "numero": "30",
-        "estado": "OCUPADO",
-        "sectorId": "2",
-        "artesanoId": 2
+        "numero": "29",
+        "sectorId": "2"
       }
   auth:
     type: bearer
-    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiJiNzNlZTRlYi1jMjIzLTRkOGYtODljOC03NTNlMWEyNTUyNWEiLCJpYXQiOjE3OTM4MDQyNTMsImV4cCI6MTc5MzgwNTE1M30.9c6VQV5Juoi4FKX1XaswhH_iwj-DgONWJj2OCIA3Os8
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiJjOTk5YTI1Zi1mMTY2LTRiZTUtYWNhNS00NTY2ZjU4YWJmODEiLCJpYXQiOjE3OTQzNTkwMDQsImV4cCI6MTc5NDM1OTkwNH0.m-BXFESU89QlQQUNPDEo-izY-AmXqvphiPrDWV7QXB8
 
 settings:
   encodeUrl: true
