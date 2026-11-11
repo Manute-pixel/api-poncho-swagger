@@ -1,0 +1,27 @@
+info:
+  name: actualizar-mi-producto-id
+  type: http
+  seq: 12
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/productos/actualizar-mi-producto/1"
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "mate redondo",
+        "descripcion": "producto de madera hecho a base de madera de roble artesanalmente moldeado",
+        "precio": 3000,
+        "categoriaId": 4,
+      }
+  auth:
+    type: bearer
+    token: asd
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

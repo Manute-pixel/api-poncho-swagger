@@ -1,0 +1,18 @@
+info:
+  name: eliminar-eliminar-mi-producto-id
+  type: http
+  seq: 11
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/productos/eliminar-mi-producto/1"
+  auth:
+    type: bearer
+    token: hjj
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
