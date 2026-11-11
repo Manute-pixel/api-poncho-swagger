@@ -1,0 +1,17 @@
+name: flujo-asignar-stand
+variables:
+  - name: adminEmail
+    value: paulo@email.com
+    description: admin email ya cargado
+  - name: carlosEmail
+    value: carlos@gmail.com
+  - name: juanEmail
+    value: juancho@gmail.com
+  - secret: true
+    name: adminClave
+    description: clave del usuario admin
+  - secret: true
+    name: carlosClave
+    description: ""
+  - secret: true
+    name: juanclave

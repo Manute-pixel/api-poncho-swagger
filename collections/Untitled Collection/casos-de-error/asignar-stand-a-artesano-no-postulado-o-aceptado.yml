@@ -1,0 +1,24 @@
+info:
+  name: asignar-stand-a-artesano-no-postulado-o-aceptado
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{baseUrl}}/stands/asignar-stand-artesano/3"
+  body:
+    type: json
+    data: |-
+      {
+        "artesanoId": 3
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTU2YWU1Yi0wMzgwLTRjOGItODIxYS05NzRhYjhlOTAyNDUiLCJqdGkiOiI3ODllZjg2YS1hMDc0LTQ5NTUtODRjZC1iNjFlMTA4ZTkzNGMiLCJpYXQiOjE3OTQ0MjU5NzMsImV4cCI6MTc5NDQyNjg3M30.-KrAhOpID4xLgsR0myvF1iqxDv3DAAD6l1A4a3-gBK4
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

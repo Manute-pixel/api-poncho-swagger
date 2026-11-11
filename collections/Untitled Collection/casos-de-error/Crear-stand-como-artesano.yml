@@ -1,0 +1,25 @@
+info:
+  name: Crear-stand-como-artesano
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/stands"
+  body:
+    type: json
+    data: |-
+      {
+        "numero": "30",
+        "sectorId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjYWRkZDgxMy1kZWRhLTQ4MzQtYjEwNy1lNjA3MjQxNDBkOGMiLCJqdGkiOiI5OWViOGFlZS01ZGQwLTRmODYtOWExOS01Y2I0N2NlYWJkZTIiLCJpYXQiOjE3OTQ0MjYzOTcsImV4cCI6MTc5NDQyNzI5N30.G2LsnxjbJzmabDzI8F-bmJBPY1p2W_tWLhQnlBeav8Y
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
