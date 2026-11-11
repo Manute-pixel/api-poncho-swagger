@@ -1,7 +1,7 @@
 info:
   name: eliminar-artesano-error
   type: http
-  seq: 8
+  seq: 7
 
 http:
   method: DELETE

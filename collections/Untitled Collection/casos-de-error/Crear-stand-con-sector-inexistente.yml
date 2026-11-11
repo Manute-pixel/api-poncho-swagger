@@ -1,0 +1,25 @@
+info:
+  name: Crear-stand-con-sector-inexistente
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{baseUrl}}/stands"
+  body:
+    type: json
+    data: |-
+      {
+        "numero": "30",
+        "sectorId": 99
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNTU2YWU1Yi0wMzgwLTRjOGItODIxYS05NzRhYjhlOTAyNDUiLCJqdGkiOiJhOGJlZDYzMy1lN2RjLTQ4M2EtOGYwNS1mOTU3ODJmZTIwYWUiLCJpYXQiOjE3OTQ0MjY0MzYsImV4cCI6MTc5NDQyNzMzNn0.dgl1mR-1bd4ptBuek7Mj34hay2LlNpUbrhjoNjUsa6w
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

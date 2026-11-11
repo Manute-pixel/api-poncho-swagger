@@ -13,16 +13,16 @@ http:
     type: json
     data: |-
       {
-        "nombre": "artesano",
-        "apellido": "prueba",
-        "email": "{{emailArtesanoNuevo}}",
-        "password": "{{claveArtesanoNuevo}}",
-        "dni": "43457893",
+        "nombre": "Juan",
+        "apellido": "sanchez",
+        "email": "carlos@gmail.com",
+        "password": "clavesegura123",
+        "dni": "44457893",
         "fechaNac": "2003-05-15",
-        "telefono": "3834983421",
-        "rubroId": 3,
-        "localidadId": 4,
-        "provinciaId": 5
+        "telefono": "3834983415",
+        "rubroId": 5,
+        "localidadId": 6,
+        "provinciaId": 2
       }
   auth: inherit
 
