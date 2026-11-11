@@ -1,0 +1,25 @@
+info:
+  name: Act-Prod-Ajeno
+  type: http
+  seq: 10
+
+http:
+  method: PUT
+  url: http://localhost:3000/productos/actualizar-mi-producto/1
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Vasija decorativa",
+        "descripcion": "Vasija de cerámica elaborada y pintada a mano con motivos regionales.",
+        "precio": 20000,
+        "categoriaId": 2
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
