@@ -1,0 +1,20 @@
+info:
+  name: get-postulacion-id-error-string
+  type: http
+  seq: 4
+
+http:
+  method: GET
+  url: "{{baseUrl}}/postulaciones?pagina=hola"
+  params:
+    - name: pagina
+      value: hola
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

@@ -1,0 +1,26 @@
+info:
+  name: crear-postulacion
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{baseUrl}}/postulaciones"
+  body:
+    type: json
+    data: |-
+      {
+        "estado":"pendiente",
+        "artesanoId": 2,
+        "edicionId": 1
+      }
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlZjhiYzM3Ny1mNWU1LTQyMDktYmFlNS1mYzUwN2Q3YWQ1MmYiLCJqdGkiOiIwMjJjMTUxNC1jNGQ5LTRhN2ItOWZiZC1jNjYwYjJiYzQ2NjgiLCJpYXQiOjE3OTQwNjkxNTAsImV4cCI6MTc5NDA3MDA1MH0.5WBG2Tb6OlxyRtL3237vZQgd_yf_4qwR-YFuspqTeck
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

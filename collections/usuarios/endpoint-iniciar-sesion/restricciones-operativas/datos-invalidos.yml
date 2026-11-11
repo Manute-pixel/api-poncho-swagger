@@ -1,0 +1,26 @@
+info:
+  name: datos-invalidos
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{baseUrl}}/usuarios/login"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "email": "josgomezgmail.com",
+        "password": 234
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

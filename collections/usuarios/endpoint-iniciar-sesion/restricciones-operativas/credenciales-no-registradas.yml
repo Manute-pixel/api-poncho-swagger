@@ -1,0 +1,26 @@
+info:
+  name: credenciales-no-registradas
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{baseUrl}}/usuarios/login"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "email": "jose@gomezgmail.com",
+        "password": "pass1234"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

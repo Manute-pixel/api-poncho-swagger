@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: http://localhost:3000/productos/mi-productos/2
+  url: "{{baseUrl}}/productos/mi-productos/2"
   auth: inherit
 
 settings:

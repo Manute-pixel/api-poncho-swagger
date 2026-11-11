@@ -18,6 +18,8 @@ collections:
     path: "collections/Flujo-1"
   - name: "Flujo-2-Gestion-Productos"
     path: "collections/Flujo-2-Gestion-Productos"
+  - name: "reporte"
+    path: "collections/reporte"
 
 specs:
 

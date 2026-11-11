@@ -1,0 +1,7 @@
+info:
+  name: Pruebas-Errores-Artesanos
+  type: folder
+  seq: 13
+
+request:
+  auth: inherit

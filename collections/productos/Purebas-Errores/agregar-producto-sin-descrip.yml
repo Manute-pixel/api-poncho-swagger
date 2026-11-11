@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://localhost:3000/productos/
+  url: "{{baseUrl}}/productos/"
   body:
     type: json
     data: |-

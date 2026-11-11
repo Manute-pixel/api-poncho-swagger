@@ -1,0 +1,16 @@
+info:
+  name: "eliminar-mi-producto-error-id-inexistente-artesano "
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/productos/eliminar-mi-producto/90"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
