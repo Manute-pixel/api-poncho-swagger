@@ -1,0 +1,25 @@
+info:
+  name: actualizar-mi-producto-error-negativo-artesano copy
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: "{{baseUrl}}/productos/actualizar-mi-producto/-1"
+  body:
+    type: json
+    data: |-
+      {
+        
+        "precio": 3000,
+        "categoriaId": 1,
+        "artesanoId": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

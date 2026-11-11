@@ -1,0 +1,16 @@
+info:
+  name: eliminar-mi-producto-artesano
+  type: http
+  seq: 12
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/productos/eliminar-mi-producto/3"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
